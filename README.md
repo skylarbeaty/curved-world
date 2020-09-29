@@ -1,2 +1,2 @@
 # curved-world
-Recreation of the world curvature effect from Animal Crossing and many endless runners. Made in Unity with shader graph. To view anything revelant here you need to open it in Unity, because its made in an engine tool.
+Recreation of the world curvature effect from Animal Crossing and many endless runners. Made in Unity with shader graph. To view [shader here](CurevedWorld/Assets/CurveWorld.shadergraph) you need to open it in Unity, because its made in an engine tool and the file is not intended to be human readable. There is a [camera controller](CurevedWorld/Assets/CameraController.cs) as well which controllers the tilt of the shader while it moves the camera.
