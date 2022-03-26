@@ -1,6 +1,4 @@
 # Curved World
-Recreation of the world curvature effect from Animal Crossing and many endless runners. Made in Unity with shader graph. To view [shader here](CurevedWorld/Assets/CurveWorld.shadergraph) you need to open it in Unity, because its made in an engine tool and the file is not intended to be human readable. There is a [camera controller](CurevedWorld/Assets/CameraController.cs) as well which controllers the tilt of the shader while it moves the camera.
-
 This is a recreation of the *curved world* effect seen in many games. This is where the curviture of the world is stylistically exagerated, so that it is easily seen. This makes it so that objects will disappear over the horizon more quickly than you would normally expect (or at all, as there is no finite horizon in Unity). Using a shader for this means no curved geometry needs to be made, when the game randers the flat ground will look like it is curved. Many games use this to spawn in things ahead of you without dealing with pop-in, a tactic common in endless runners. 
 
 I specifically designed this shader after the curved world effect in Animal Crossing: New Horizons. This game appears to be using this effect to lessen the difference between camera angles: it cranks up the curviture of the world at lower angles, hiding behind the horizon some of the extra terrain you would be able to see. Mechanically the game is showing you around the same amount of information at any of the three camera angles, which can be seen as encrouaging you focus on near-by objects. Objects over the horizon that are tall enough can be seen over the horizon, which can even aid in navigation.
@@ -65,7 +63,7 @@ IEnumerator CameraShift(Vector3 offset, Quaternion rot, float amount, float move
 
 ## Results
 
-![GIF of world curve shader running]()
+![GIF of world curve shader running](Images/FinalCameraAngles.gif)
 
 The final product is a camera that has a very similar feel to the one in Animal Crossing. It smoothly transitions between the camera angles with matching changes to the curvature of the shader. 
 
@@ -73,7 +71,7 @@ The final product is a camera that has a very similar feel to the one in Animal 
 #### How to Run
 Download this repo  
 Open the folder [Curved World](CurevedWorld) in Unity 2019.3.7f1 (this uses an early version of Shader Graph, using a newer version may have strange results)
-Press play button
+Press play button  
 You can view the shader by clicking on CurveWorld.shadergraph in the asset window
 
 #### Assets Used
